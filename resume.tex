@@ -1,0 +1,305 @@
+%of% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute thi9 file.
+
+\documentclass[letterpaper]{article}
+\usepackage{multicol}
+\setlength{\multicolsep}{0pt plus 0pt minus 0pt}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{colortbl}
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+
+% Set your name here
+\def\name{Charles D Burnell}
+
+%google recruiter goal
+%\def\goal{Ask xtine about what would go best here}
+
+%google internship goal goal
+\def\goal{My goal is to be a software engineer to use my knowledge of math and statistics to develop new software tools using formal mathematics.}
+
+%JPL Goal
+%\def\goal{I would like to be placed into a JPL internship so that I may contribute to space exploration via my software engineering skills. }
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {computer science, statistics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  %body={6.5in, 8.75in},
+  left=1in,
+  top=1in,
+  bottom = 1in,
+  right = 1in
+}
+
+% Customize page headers
+%\pagestyle{myheadings}
+%\markright{\name}
+%\thispagestyle{empty}
+\pagenumbering{gobble}
+
+% Custom section fonts
+\usepackage{sectsty}
+\usepackage[compact]{titlesec}
+\sectionfont{\rmfamily\mdseries}
+\subsectionfont{\rmfamily\mdseries\itshape}
+\titlespacing\section{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+%\renewenvironment{itemize}{
+%  \begin{list}{
+%    \setlength{\leftmargin}{1.5em}
+%    \setlength{\itemsep}{0em}
+%  }
+%}{
+%  \end{list}
+%}
+\usepackage{enumitem}
+\setlist{nolistsep}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+\vspace{.05in}\hline{}\vspace{.05in}
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+\vspace{.05in}\vspace{.05in}
+\begin{multicols}{2}
+1806 W Yale Ct \\
+Boise ID, 83706
+\vfill
+\columnbreak
+Phone: (208) 995-6366\\
+Email:  \href{mailto:c.burnell@gmail.com}{\tt c.burnell@gmail.com}
+\end{multicols}
+
+%\begin{minipage}{0.45\linewidth}
+%1806 W Yale Ct \\
+% Boise ID, 83706 \\
+%\end{minipage}
+%\begin{minipage}{0.45\linewidth}
+%  \begin{tabular}{ll}
+%    Phone: & (208)-995-6366 \\
+%    Email: & \href{mailto:c.burnell@gmail.com}{\tt c.burnell@gmail.com} \\
+%  \end{tabular}
+%\end{minipage}
+\vspace{.05in}\\
+%\section{Professional Summary}
+\goal
+\section*{Education}
+\begin{multicols}{2}
+\textit{Boise State University}
+\vfill
+\columnbreak
+\textit{2013-Present}
+\end{multicols}
+
+%\textit{Boise State University (Triple Major) \hfill{} 2013-Present\hfill{ 0.5\textwidth}}
+%\begin{multicols}{2}
+%\subsection*{Boise State University (Triple Major)\vfill
+%\columnbreak
+%2013-present}
+%\end{multicols}
+
+\begin{itemize}
+\item Bachelor of Science (Double Major) in  Mathematics, and Computer Science
+
+%  \item B.S. Pure Mathematics (in progress)
+%Boise State University
+%2013-Present
+
+%  \item Computer Science (in progress) 
+%Boise State University
+%2014-Present
+\item Expected Graduation May 2018 - Current GPA 3.497
+\end{itemize}
+
+\vspace{.05in}
+\begin{multicols}{2}
+\textit{Guardian College}
+\vfill
+\columnbreak
+\textit{2012-2013}
+\end{multicols}
+%\textit{Guardian College\hfill{} 2012-2013\hfill{ \textwidth}}
+\begin{itemize}
+      \item Certificate in Paramedic Science 
+\end{itemize}
+\section*{Relevant Experience}
+
+\begin{multicols}{2}
+\textit{Google Intern - Google Chrome Team}
+\vfill
+\columnbreak
+\textit{May 2017-Present}
+\end{multicols}
+%\subsection*{Sample Return Robot Challenge Team \hfill May 2016 - Present}
+\begin{itemize}
+    \item Improving the Google Chrome task manager to properly track network usage and process management.
+\end{itemize}
+
+\vspace{.05in}
+
+
+\begin{multicols}{2}
+\textit{International Ground Vehicle Competition Team}
+\vfill
+\columnbreak
+\textit{May 2016-May 2017}
+\end{multicols}
+%\subsection*{Sample Return Robot Challenge Team \hfill May 2016 - Present}
+\begin{itemize}
+    \item Managed development as head computer science student for an autonomous sample collecting rover.
+    \item Developed prototypes of vision, navigation, guidance, and control software using C++, Python, and OpenCV. 
+\end{itemize}
+
+\vspace{.05in}
+\begin{multicols}{2}
+\textit{ Teacher's Assistant, Boise State University}
+\vfill
+\columnbreak
+\textit{August 2015-May 2016}
+\end{multicols}
+%\textit{Teaching Assistant, Boise State University \hfill August 2015-Present\hfill{ \textwidth}}
+\begin{itemize}
+    \item Converted, documented, and maintained 29 cryptology programs from Maple to Sage.
+    \item Taught classes of 20+ students on how to use the programs in Sage.
+    \item Read, graded, and critiqued students' cryptographic programs.
+\end{itemize}
+%I convert algebraic and public key cryptology programs from Maple to Sage, and teach students on how to make proper calls to the Sage functions and troubleshoot any problems encountered. I also have been the grader, having to read students work, commenting on quality and techniques used.
+
+\vspace{.05in}
+\begin{multicols}{2}
+\textit{Boise State Microgravity Team}
+\vfill
+\columnbreak
+\textit{August 2015-May 2016}
+\end{multicols}
+%\subsection*{Boise State Microgravity Team \hfill August 2015 - May 2016}
+\begin{itemize}
+    \item Helped design a float sample collection tool to be tested at NASA's Neutral Buoyancy Lab, April 2016, using SolidWorks.
+    \item Spearheaded Quick Disconnect Mechanism and Sample Collection Box designs. 
+	\item Rapidly prototyped 6 different iterations of subsystems using 3d printers.
+	%\item Tested 3d printer filament for suitability in the build.
+	%\item Operated a 3d printer that rapid prototyped 6 different iterations of subsystems. 
+\end{itemize}
+
+\vspace{.05in}
+\begin{multicols}{2}
+\textit{Elliptic Curve Research-Independent Study}
+\vfill
+\columnbreak
+\textit{August 2015-Present}
+\end{multicols}
+%\subsection*{"On Bachet's Equation" presented at Boise Crypt Fall 2015}
+\begin{itemize}
+    \item Discovered 11 integer sequences related to the Bachet elliptic curves over prime finite fields that are not in the Online Encyclopedia of Integer Sequences
+    \item Presented "On Bachet's Equation" at the Boise Crypt Fall 2015 conference.
+\end{itemize}
+%	Found 11 integer sequences related to Elliptic Curves that are not yet in the Online Encyclopedia of integer sequences
+
+\section*{Technical Skills}
+\begin{itemize}
+\item Computer languages (Experienced): Java, Python, Sage 
+\item Computer languages (Familiar) : R, Maple, SQL, C/C++
+\item CAD Software (Familiar): SolidWorks, OnShape
+\item Machine shop (Familiar): CNC Mill, Manual Mill
+\end{itemize}
+
+%\begin{multicols}{2}
+%\subsubsection*{Computer Languages I am experienced with}
+% Java, Python, Sage, \LaTeX
+%
+%\vfill
+%\columnbreak
+%
+%\subsubsection*{Computer Languages I am familiar with}
+% R, Maple, SQL, C
+%\end{multicols}
+
+%\begin{table}[H]
+%\centering
+%\caption{My caption}
+%\label{my-label}
+%\begin{tabular}{ll}
+%Computer languages I am experience with & Computer languages I am familiar with \\
+%Java, Python, Sage, \LaTeX              & R, Maple, SQL, C                     
+%\end{tabular}
+%\end{table}
+%\subsubsection*{Computer Languages I am experienced with}
+% Java, Python, Sage, \LaTeX
+%\subsubsection*{Computer Languages I am familiar with}
+%R, Maple, SQL, C
+\vspace{.05in}
+\section*{Other Experience}
+\begin{multicols}{2}
+\textit{Hospital Corpsman US Navy
+\\United States, Japan and Philippines}
+\vfill
+\columnbreak
+\textit{2007-2011}
+\end{multicols}
+%\subsection*{Hospital Corpsman US Navy, United States, Japan and Philippines \hfill 2007-2011}\\
+\begin{itemize}
+    %\item Served as a hospital corpsman in the United States, Japan and the Philippines
+    \item Treated patients, including over 200 wounded, in what became Walter Reed National Military Medical Center.
+    \item Managed an inventory of over 10 million dollars of medical equipment.
+    \item Taught Combat Life Saving/ Tactical Combat Casualty Care to over 100 Marines and Corpsman. 
+\end{itemize}
+
+%I was a Hospital Corpsman for 4+ years serving in the United States, Japan and the Philippines. I worked in post anesthesia care in what is now the Walter Reed Joint Medical Center, providing care for wounded from both Iraq and Afghanistan. While in Japan I was in charge of inventory of over 10 million dollars of medical equipment and was the battalion Combat Life Saving/Tactical Combat Casualty Care instructor.
+
+%\subsection*{IEEEXtreme Challenge 2015}
+%\begin{itemize}
+%\item Placed in top third of all United States teams in a 24 hour competition
+%\end{itemize}
+%\vspace{.05in}
+%\begin{multicols}{2}
+%\textit{Boise State Foundational Studies Advisory Board}
+%\vfill
+%\columnbreak
+%\textit{September 2015 - May 2016}
+%\end{multicols}
+%%\subsection*{Boise State Foundational Studies Advisory Board \hfill Academic school year 2016}
+%\begin{itemize}
+%    \item Provided student feedback on Foundational Studies experiences.
+%    \item Critiqued upcoming Foundational Studies curriculum. 
+%\end{itemize}
+%fix this up maybe get rid of one thing to add the SRRC item. 
+
+\end{document}
+
